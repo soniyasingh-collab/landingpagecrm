@@ -9,12 +9,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    
+    body, html {
+            height: 100%;
+            margin: 0;
+        }
 
+        .bg {
+            background-image: url('cover.jpeg'); /* Replace with your image URL */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
     body {
       font-family: 'Poppins', sans-serif;
       background: #f8f9fa;
@@ -22,8 +30,9 @@
       line-height: 1.6;
     }
 
+
     header {
-      background: #2d79e6;
+      background: orange;
       color: white;
       padding: 2rem 0;
       text-align: center;
@@ -51,7 +60,7 @@
     }
 
     .cta-button {
-      background-color: #ff6b2b;
+      background-color: green;
       color: white;
       padding: 0.75rem 2rem;
       border-radius: 5px;
@@ -67,7 +76,7 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1600px;
       margin: 2rem auto;
       padding: 1rem;
     }
@@ -115,18 +124,20 @@
 </head>
 
 <body>
+  
+  
   <header>
     <h1>Real Estate CRM for Effortless Lead Management</h1>
     <p>Boost your business with bulk SMS, WhatsApp, emails, and smart lead management</p>
     <nav>
-      <a href="#features">Features</a>
-      <a href="#contact">Contact</a>
+     <a href="#features">Features</a>
+     <a href="#contact">Contact</a>
       <a href="#pricing">Pricing</a>
     </nav>
     <a href="#features" class="cta-button">Discover More</a>
   </header>
 
-  <section class="container" id="features">
+  <section class="container bg"  id="features">
     <h2 style="text-align:center; font-size:2.2rem; margin-bottom:2rem;">Key Features</h2>
     <div class="features">
       <div class="feature-box">
@@ -157,7 +168,7 @@
     <p style="text-align:center; font-size:1.2rem;">Have any questions? Contact us at <strong>support@realestatecrm.com</strong></p>
     <p style="text-align:center; font-size:1.2rem;">Phone: +9711810820</p>
   </section>
-
+  
   <footer>
     <p>&copy; 2024 Real Estate CRM. All Rights Reserved.</p>
   </footer>
